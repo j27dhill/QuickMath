@@ -1,0 +1,14 @@
+<div>
+	<h1>
+	  {{ firstNum }} + {{ secondNum }} = {{ final }} 
+	</h1>
+	<button class="btn btn-success btn-lg" (click)="onAttempt()">&#10004;</button>
+	<button class="btn btn-danger btn-lg" (click)="onAttempt2()">&#10060;</button>
+	<h2>Score: {{ score }}</h2>
+	<h2>High Score: {{ highScore }}</h2>
+	<a routerLink="../play"><button class="btn btn-primary" (click)="reset()">Play Again</button></a>
+	<a routerLink="/"><button class="btn btn-warning">Home</button></a>
+</div>
+
+<h1 id="Timer">{{ time }}</h1>
+
